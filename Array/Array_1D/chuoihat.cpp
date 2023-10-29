@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
+
+    // Read file
     int i = 0;
     int arr[100000];
 
@@ -19,23 +21,25 @@ int main()
             // cout << arr[i] << " ";
         }
 
-        inFile.close(); // CLose input file
+        inFile.close(); // Close input file
     }
-    else { //Error message
+    else { // Error message
         cerr << "Can't find input file " << inFileName << endl;
     }
 
-    for(int i = 0; i < 22; i++)
-    {
-        cout << arr[i] << endl;
-    }
-
-    set<int> colors;
+    vector<int> vec;
     for(int i = 0; i < 22; i++)
     {
         if(arr[i] != 0)
-            colors.insert(arr[i]);
+        {
+            vec.push_back(arr[i]);
+            cout << arr[i] << endl;
+        }
     }
+
+    cout << endl;
+
+    set<int> colors(vec.begin(), vec.end());
 
     // Result
     cout << colors.size() << endl;
