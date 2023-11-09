@@ -55,6 +55,8 @@ int main()
 
     cout << endl;
 
+    
+
     set<int> colors(vec.begin(), vec.end());
 
     // Result

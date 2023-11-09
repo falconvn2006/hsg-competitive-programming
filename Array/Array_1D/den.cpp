@@ -1,35 +1,32 @@
+#define ll long long
+
 #include <bits/stdc++.h>
 
 using namespace std;
 
 int main()
 {
-    int n, k;
+    long long n, k;
     cin >> n >> k;
 
-    int a[1000000]; // 10^6
+    string a(n+1, (char)'0');
 
-    for(int i = 1; i <= n; i++)
+    for(ll i = 1; i <= k; i++)
     {
-        a[i] = 0; // All green
+        // for(ll j = 1; j <= n; j++)
+        // {
+        //     if(j % (i+1) == 0)
+        //         if(a[j] == '0')
+        //             a[j] = '1';
+        //         else
+        //             a[j] = '0';
+        // }
     }
 
-    for(int i = 1; i <= k; i++)
+    ll count = 0;
+    for(ll i = 1; i <= n; i++)
     {
-        for(int j = 1; j <= n; j++)
-        {
-            if(j % (i+1) == 0)
-                if(a[j] == 0)
-                    a[j] = 1;
-                else
-                    a[j] = 0;
-        }
-    }
-
-    int count = 0;
-    for(int i = 1; i <= n; i++)
-    {
-        if(a[i] == 1)
+        if(a[i] == '1')
         {
             count++;
         }
