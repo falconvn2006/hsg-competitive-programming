@@ -9,18 +9,24 @@ int main()
     string s;
     cin >> s;
 
-    vector<int> res;
+    vector<int> res = {1};
 
-    for(int mid = 0; mid < n; mid++)
+    for(int mid = 1; mid < n; mid++)
     {
         int count = 0;
         int l = 0, r = mid;
 
-        while(l <= r && r < n)
+        while(l < r)
         {
             if(s[l] == s[r])
             {
                 count++;
+            }
+            else
+            {
+                l++;
+                r--;
+                continue;
             }
 
             l++;
@@ -34,6 +40,8 @@ int main()
     {
         cout << x << " ";
     }
+
+    cout << endl;
 
     return 0;
 }
