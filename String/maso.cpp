@@ -41,3 +41,11 @@ int main()
 
     return 0;
 }
+
+// Sample input
+
+// 11
+// 6830907
+// 2 7 6 5 4 3 2
+// JABCDEFGHIZ
+
