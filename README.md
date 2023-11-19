@@ -4,4 +4,5 @@ A collection of problems that I use for training for the HSG competition :)
 ## TODO
 ```
 Basic_Programming_Skills/demtau/demtau.cpp
+Basic_Programming_Skills/summin/summin.cpp
 ```
