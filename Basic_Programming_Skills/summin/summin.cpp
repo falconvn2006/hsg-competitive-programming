@@ -16,13 +16,13 @@ int main()
         cin >> arr[i];
     }
 
-    int minRes = abs(arr[0] - arr[1]), pos = 0;
-    for(int i = 1; i < n; i++)
+    int minRes = 99999, pos = 0;
+    for(int i = 0; i < n; i++)
     {
-        if(abs(arr[i] - arr[i+1]) <= minRes)
+        if(abs(arr[i] + arr[i+1]) < minRes)
         {
-            minRes = abs(arr[i] - arr[i+1]);
-            pos = i;
+            minRes = abs(arr[i] + arr[i+1]);
+            pos = i+1;
         }
     }
 

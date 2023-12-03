@@ -19,25 +19,14 @@ int main()
         int x;
         cin >> x;
 
-        sum += s7[i] * x;
+        sum += (s7[i] - '0') * x;
     }
 
     cin >> sk;
 
     int mod = sum % k;
 
-    char res;
-
-    for(int i = 0; i < sk.size(); i++)
-    {
-        if(mod/2 == i)
-        {
-            res = sk[i-1];
-            break;
-        }
-    }
-
-    cout << res << endl;
+    cout << sk[mod] << endl;
 
     return 0;
 }
