@@ -2,6 +2,19 @@
 
 using namespace std;
 
+int solve()
+{
+    int k;
+    cin >> k;
+
+    int dp[1000005];
+
+    for(int i = 1; i <= k; ++i)
+    {
+        
+    }
+}
+
 int main()
 {
     freopen("dao.inp", "r", stdin);
