@@ -13,7 +13,7 @@ https://vnoi.info/wiki/algo/graph-theory/breadth-first-search.md
 //
 
 //
-Recheck the code
+Optimize the code
 Advance_Programming_Skills/lingvo/lingvo.cpp
 //
 

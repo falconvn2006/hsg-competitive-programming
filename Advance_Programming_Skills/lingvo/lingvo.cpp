@@ -18,14 +18,14 @@ int main()
         numbers.push_back(s);
     }
 
-    sort(numbers.begin(), numbers.end());
+    // sort(numbers.begin(), numbers.end());
 
-    for(int i = 0; i < numbers.size(); i++)
-    {
-        cout << numbers[i] << " ";
-    }
+    // for(int i = 0; i < numbers.size(); i++)
+    // {
+    //     cout << numbers[i] << " ";
+    // }
 
-    cout << "\n";
+    // cout << "\n";
 
     int n;
     cin >> n;
@@ -35,9 +35,13 @@ int main()
         string num;
         cin >> num;
 
-        char target = *max_element(num.begin(), num.end());
+        string maxEl = numbers[num[0] - '0'];
+        for(int i = 1; i < num.size(); i++)
+        {
+            maxEl = max(maxEl, numbers[num[i] - '0']);
+        }
 
-        cout << numbers[target - '0'] << endl;
+        cout << maxEl << "\n";
     }
 
     return 0;
