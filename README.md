@@ -31,4 +31,9 @@ Advance_Programming_Skills/quocky/quocky.cpp
 Revisit
 Advance_Programming_Skills/biendoi/biendoi.cpp
 //
+
+//
+Revisit!!!
+Dynamic_Programming/Tailieu/Examples/qbmax/qbmax.cpp
+//
 ```
