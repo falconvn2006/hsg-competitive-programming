@@ -36,6 +36,11 @@ Advance_Programming_Skills/biendoi/biendoi.cpp
 Revisit!!!
 Dynamic_Programming/Tailieu/Examples/qbmax/qbmax.cpp
 //
+
+//
+Revisit 2D array
+Dynamic_Programming/Tailieu/Works/chess/chess.cpp
+//
 ```
 
 
