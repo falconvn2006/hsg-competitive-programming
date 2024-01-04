@@ -22,15 +22,28 @@ int main()
 {
     faster;
 
-    int n, a, b, c;
+    int n;
+    cin >> n;
 
-    cin >> n >> a >> b >> c;
+    int arr[1000005];
+    for(int i = 0; i < n; i++) cin >> arr[i];
 
-    int dp[100004];
+    int dp[1000005];
+    
     for(int i = 0; i < n; i++)
     {
-        
+        dp[i] = 1;
+
+        for(int j = 0; j < i; j++)
+        {
+            if(arr[i] >= arr[j])
+            {
+                if(dp[j]+1 > dp[i]) dp[i] = dp[j]+1;
+            }
+        }
     }
-    
+
+    cout << *max_element(dp, dp+n) << "\n";
+
     return 0;
 }

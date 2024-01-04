@@ -41,6 +41,11 @@ Dynamic_Programming/Tailieu/Examples/qbmax/qbmax.cpp
 Revisit 2D array
 Dynamic_Programming/Tailieu/Works/chess/chess.cpp
 //
+
+//
+I NEED HELP WITH DP
+Dynamic_Programming/Tailieu/AdvanceExamples/qbstr/qbstr.cpp
+//
 ```
 
 

@@ -54,7 +54,7 @@ int main()
         }
     }
 
-    cout << *max_element(dp, dp+n); EL;
+    cout << *max_element(dp, dp+n+1); EL;
 
     return 0;
 }
