@@ -48,5 +48,10 @@ Dynamic_Programming/Tailieu/AdvanceExamples/qbstr/qbstr.cpp
 //
 ```
 
+## HSG TODO
+```
+// Recheck
+HSG_Fewer_Years/DongNai_B_2014/nguyento/nguyento.cpp
+```
 
 **TODO : ACTUALLY LEARN DYNAMIC PROGRAMMING**

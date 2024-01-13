@@ -18,32 +18,49 @@ typedef unsigned long long ull;
 #define fillchar(a,x) memset(a, x, sizeof (a))
 #define faster ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
+int isPrime(int n)
+{
+    if (n < 2)
+        return 0;
+    for (int i = 2; i * i <= n; ++i)
+        if (n % i == 0)
+            return 0;
+    return 1;
+}
+
+bool solve(int k)
+{
+    ll sum = 0;
+    for(int i = 1; i < k; i++)
+    {
+        if(k % i == 0)
+            sum += i;
+
+        if(sum > k)
+            return true;
+    }
+
+    if(sum > k)
+        return true;
+    else
+        return false;
+}
+
 int main()
 {
     faster;
 
-    int n;
-    cin >> n;
+    int l, r;
+    cin >> l >> r;
 
-    int arr[1000005];
-    for(int i = 0; i < n; i++) cin >> arr[i];
-
-    int dp[1000005];
-    
-    for(int i = 0; i < n; i++)
+    for(int i = l; i <= r; l++)
     {
-        dp[i] = 1;
-
-        for(int j = 0; j < i; j++)
+        if(solve(i))
         {
-            if(arr[i] >= arr[j])
-            {
-                if(dp[j]+1 > dp[i]) dp[i] = dp[j]+1;
-            }
+            cout << i << "\n";
+            break;
         }
     }
-
-    cout << *max_element(dp, dp+n) << "\n";
 
     return 0;
 }
