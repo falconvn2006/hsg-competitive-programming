@@ -28,39 +28,11 @@ int isPrime(int n)
     return 1;
 }
 
-bool solve(int k)
-{
-    ll sum = 0;
-    for(int i = 1; i < k; i++)
-    {
-        if(k % i == 0)
-            sum += i;
-
-        if(sum > k)
-            return true;
-    }
-
-    if(sum > k)
-        return true;
-    else
-        return false;
-}
-
 int main()
 {
     faster;
 
-    int l, r;
-    cin >> l >> r;
-
-    for(int i = l; i <= r; l++)
-    {
-        if(solve(i))
-        {
-            cout << i << "\n";
-            break;
-        }
-    }
+    
 
     return 0;
 }
