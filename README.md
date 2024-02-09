@@ -1,6 +1,9 @@
 # hsg-competitive-programming
 A collection of problems that I use for training for the HSG competition :)
 
+So the contest is over. Result is 3rd place :D <br>
+This will just be a sandbox now :D
+
 ## TODO
 ```
 //
